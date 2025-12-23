@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section class="aa-section">
+    <h1 class="aa-h1">{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="aa-lead">{{ . }}</p>{{ end }}
+
+    {{ with .Content }}
+      <div class="aa-prose">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div class="aa-cardgrid">
+  {{ range .Pages.ByWeight.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="aa-cardlink">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">{{ .Title }}</span>
+          {{ with .Params.description }}<p class="grey-text text-darken-2">{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </a>
+  {{ end }}
+</div>
+  </section>
+{{ end }}

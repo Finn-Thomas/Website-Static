@@ -1,0 +1,14 @@
+- id: nav_contact
+  translation: "Kontakt"
+- id: nav_apply
+  translation: "Betreuer werden"
+- id: nav_ai
+  translation: "KI-Hinweis"
+- id: footer_legal
+  translation: "Rechtliches"
+- id: footer_rights
+  translation: "Alle Rechte vorbehalten."
+- id: skip_to_content
+  translation: "Zum Inhalt springen"
+- id: nav_login
+  translation: "Login"

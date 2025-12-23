@@ -1,0 +1,51 @@
+{{ $action := .Site.Params.forms.contactAction }}
+{{ $mailto := printf "mailto:%s" .Site.Params.forms.contactEmail }}
+
+{{ $title := .Get "title" | default (i18n "nav_contact") }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $formType := .Get "formType" | default "general" }}
+{{ $submitLabel := .Get "submitLabel" | default "Send" }}
+
+<div class="card aa-card">
+  <div class="card-content">
+    <span class="card-title aa-card__title">{{ $title }}</span>
+    {{ with $subtitle }}<p class="grey-text text-darken-2">{{ . }}</p>{{ end }}
+
+    {{ if $action }}
+      <form method="post" action="{{ $action }}">
+        <input type="hidden" name="formType" value="{{ $formType }}">
+        <input type="hidden" name="lang" value="{{ .Site.Language.Lang }}">
+
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <input id="name" name="name" type="text" required>
+            <label for="name">{{ if eq .Site.Language.Lang "de" }}Name{{ else }}Name{{ end }}</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input id="email" name="email" type="email" required>
+            <label for="email">{{ if eq .Site.Language.Lang "de" }}E-Mail{{ else }}Email{{ end }}</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="subject" name="subject" type="text" required>
+            <label for="subject">{{ if eq .Site.Language.Lang "de" }}Thema / Anliegen{{ else }}Topic / request{{ end }}</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+            <label for="message">{{ if eq .Site.Language.Lang "de" }}Nachricht{{ else }}Message{{ end }}</label>
+          </div>
+        </div>
+
+        <button class="btn aa-btn-primary" type="submit">{{ $submitLabel }}</button>
+      </form>
+    {{ else }}
+      <p class="grey-text text-darken-2">
+        {{ if eq .Site.Language.Lang "de" }}
+          Kein Formular-Endpunkt konfiguriert. Nutzen Sie bitte E-Mail:
+        {{ else }}
+          No form endpoint configured. Please use email:
+        {{ end }}
+        <a href="{{ $mailto }}">{{ .Site.Params.forms.contactEmail }}</a>
+      </p>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angebot on Adeptus Academicus</title>
+    <link>http://localhost:1313/angebot/</link>
+    <description>Recent content in Angebot on Adeptus Academicus</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <atom:link href="http://localhost:1313/angebot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-tägiger Abschlussarbeits-Workshop</title>
+      <link>http://localhost:1313/angebot/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/angebot/workshop/</guid>
+      <description>&lt;h2 id=&#34;worum-geht-es&#34;&gt;Worum geht es?&lt;/h2&gt;&#xA;&lt;p&gt;Ein kompakter Workshop (1 Tag), der Ihnen die &lt;strong&gt;wichtigsten Grundlagen&lt;/strong&gt; für eine erfolgreiche Abschlussarbeit vermittelt und direkt auf Ihr Thema anwendet: von der klaren Forschungsfrage über Gliederung und Methodik bis zu Zitierlogik, Stil und Arbeitsorganisation. Ziel ist, dass Sie am Ende des Tages mit &lt;strong&gt;klaren nächsten Schritten&lt;/strong&gt; und einem realistischen Plan in die Schreibphase starten.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Hier Preisvorstellung einfügen.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Workshop anfragen&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Nennen Sie Thema, Fachbereich und Deadline – wir schlagen passende Terminoptionen und einen konkreten Ablauf vor.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/kontakt/&#34;&gt;Kontakt&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Individuelles Coaching</title>
+      <link>http://localhost:1313/angebot/statistik-beratung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/angebot/statistik-beratung/</guid>
+      <description>&lt;h2 id=&#34;typische-fragestellungen&#34;&gt;Typische Fragestellungen&lt;/h2&gt;&#xA;&lt;p&gt;Wie bringe ich meine Argumentation in eine klare, überzeugende Struktur?&lt;br&gt;&#xA;Wie formuliere ich präzise und wissenschaftlich, ohne unnötig kompliziert zu schreiben?&lt;br&gt;&#xA;Wie plane ich den Schreibprozess so, dass ich fristgerecht fertig werde?&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Beratung buchen&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Beschreiben Sie Thema, Zielpublikum und Ihren aktuellen Stand – wir unterstützen Sie dabei, Argumentation und Struktur zu schärfen und Ihren Schreibprozess planbar umzusetzen.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/kontakt/&#34;&gt;Kontakt&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Videoplattform</title>
+      <link>http://localhost:1313/angebot/videoplattform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/angebot/videoplattform/</guid>
+      <description>&lt;h3 id=&#34;entwickelt-mit-experten&#34;&gt;Entwickelt mit Experten&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Erfahren Sie mehr zu unserem Konzept&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Unsere Videoplattform, entwickelt mit Experten&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/ueber-uns/&#34;&gt;Erfahre mehr&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Wissenschaftliches Lektorat</title>
+      <link>http://localhost:1313/angebot/wissenschaftliches-lektorat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/angebot/wissenschaftliches-lektorat/</guid>
+      <description>&lt;h2 id=&#34;für-wen-geeignet&#34;&gt;Für wen geeignet?&lt;/h2&gt;&#xA;&lt;p&gt;Für Texte, die fachlich stimmen, aber sprachlich, in der Struktur oder im Argumentationsfluss verbessert werden sollen.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Lektorat anfragen&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Senden Sie eine Beispielseite (1–2 Seiten) und Ihre Vorgaben – wir antworten mit einem Vorschlag.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/kontakt/&#34;&gt;Kontakt&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

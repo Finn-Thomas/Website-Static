@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Adeptus Academicus</title>
+    <link>http://localhost:1313/en/angebot/</link>
+    <description>Recent content in Services on Adeptus Academicus</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/en/angebot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-Day Thesis Workshop</title>
+      <link>http://localhost:1313/en/angebot/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/angebot/workshop/</guid>
+      <description>&lt;h2 id=&#34;what-is-it-about&#34;&gt;What is it about?&lt;/h2&gt;&#xA;&lt;p&gt;A compact 1-day workshop that covers the &lt;strong&gt;essential basics&lt;/strong&gt; for a successful thesis and applies them directly to your topic—from a clear research question and a solid outline to methodology, citation logic, academic style, and workflow organization. By the end of the day, you will have &lt;strong&gt;clear next steps&lt;/strong&gt; and a realistic plan to enter the writing phase with confidence.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Preisvorschlag.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Request a workshop&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Share your topic, field, and deadline—we’ll propose suitable dates and a clear agenda.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/en/kontakt/&#34;&gt;Contact&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Academic Editing</title>
+      <link>http://localhost:1313/en/angebot/wissenschaftliches-lektorat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/angebot/wissenschaftliches-lektorat/</guid>
+      <description>&lt;h2 id=&#34;who-its-for&#34;&gt;Who it’s for&lt;/h2&gt;&#xA;&lt;p&gt;For manuscripts that are technically correct, but need better clarity, structure, and flow.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Request editing&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Send 1–2 sample pages and your guidelines—we’ll reply with a proposal.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/en/kontakt/&#34;&gt;Contact&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Individual Coaching</title>
+      <link>http://localhost:1313/en/angebot/statistik-beratung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/angebot/statistik-beratung/</guid>
+      <description>&lt;h2 id=&#34;typical-questions&#34;&gt;Typical Questions&lt;/h2&gt;&#xA;&lt;p&gt;How do I turn my argument into a clear, convincing structure?&lt;br&gt;&#xA;How do I write precisely and academically without making the text unnecessarily complex?&lt;br&gt;&#xA;How do I plan the writing process so I can meet my deadline?&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Book a consultation&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Describe your topic, target audience, and current stage—we’ll help you sharpen your argument and structure and plan your writing process in a clear, manageable way.&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/en/kontakt/&#34;&gt;Contact&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Video Platform</title>
+      <link>http://localhost:1313/en/angebot/videoplattform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/angebot/videoplattform/</guid>
+      <description>&lt;h3 id=&#34;developed-with-experts&#34;&gt;Developed with experts&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;card-panel aa-cta-inline z-depth-1&#34;&gt;&#xA;  &lt;div class=&#34;row&#34; style=&#34;margin-bottom:0&#34;&gt;&#xA;    &lt;div class=&#34;col s12 m8&#34;&gt;&#xA;      &lt;div class=&#34;aa-cta-inline__title&#34;&gt;Learn more about our concept&lt;/div&gt;&#xA;      &lt;div class=&#34;grey-text text-darken-2&#34;&gt;Our video platform, developed with experts&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col s12 m4 aa-cta-inline__btn&#34;&gt;&#xA;      &lt;a class=&#34;btn aa-btn-primary right&#34; href=&#34;http://localhost:1313/en/ueber-uns/&#34;&gt;Learn more&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,86 @@
+baseURL: https://example.com/
+title: Adeptus Academicus
+languageCode: de-de
+defaultContentLanguage: de
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+params:
+  description: Professionelle, menschliche Betreuung wissenschaftlicher Arbeiten –
+    fachlich, methodisch und emotional unterstützt.
+  brand:
+    name: Adeptus Academicus
+    tagline: Menschlich. Methodisch. Zielorientiert.
+    logo: /images/logo.svg
+  forms:
+    contactAction: ''
+    contactEmail: hello@example.com
+  palette:
+    primary: '#1976D2'
+    secondary: '#009688'
+    surface: '#ffffff'
+    background: '#fafafa'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+languages:
+  de:
+    languageName: Deutsch
+    languageCode: de-DE
+    contentDir: content/de
+    weight: 1
+    params:
+      i18n:
+        flag: /images/flags/de.svg
+        label: DE
+      description: Professionelle, menschliche Betreuung wissenschaftlicher Arbeiten
+        – fachlich, methodisch und emotional unterstützt.
+      brand:
+        tagline: Menschlich. Methodisch. Zielorientiert.
+    menu:
+      main:
+      - name: Angebot
+        url: /angebot/
+        weight: 10
+      - name: Preise
+        url: /preise/
+        weight: 15
+      - name: Über uns
+        url: /ueber-uns/
+        weight: 20
+      - name: Betreuer werden
+        url: /betreuer/
+        weight: 30
+      - name: Kontakt
+        url: /kontakt/
+        weight: 40
+  en:
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    weight: 2
+    params:
+      i18n:
+        flag: /images/flags/en.svg
+        label: EN
+      description: Professional, human support for academic writing—subject matter,
+        methods, and process.
+      brand:
+        tagline: Human. Methodical. Outcome-focused.
+    menu:
+      main:
+      - name: Services
+        url: /angebot/
+        weight: 10
+      - name: Prices
+        url: /prices/
+        weight: 15
+      - name: About
+        url: /about/
+        weight: 20
+      - name: Become a tutor
+        url: /betreuer/
+        weight: 30
+      - name: Contact
+        url: /kontakt/
+        weight: 40

@@ -1,0 +1,16 @@
+{{ $title := .Get "title" }}
+{{ $text := .Get "text" }}
+{{ $buttonLabel := .Get "buttonLabel" | default (i18n "nav_contact") }}
+{{ $buttonUrl := .Get "buttonUrl" | default "/kontakt/" }}
+
+<div class="card-panel aa-cta-inline z-depth-1">
+  <div class="row" style="margin-bottom:0">
+    <div class="col s12 m8">
+      <div class="aa-cta-inline__title">{{ $title }}</div>
+      <div class="grey-text text-darken-2">{{ $text }}</div>
+    </div>
+    <div class="col s12 m4 aa-cta-inline__btn">
+      <a class="btn aa-btn-primary right" href="{{ $buttonUrl | relLangURL }}">{{ $buttonLabel }}</a>
+    </div>
+  </div>
+</div>

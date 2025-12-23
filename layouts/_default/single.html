@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="aa-section">
+  <div class="aa-page">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="aa-h1">{{ .Title }}</h1>
+        {{ with .Params.description }}<p class="aa-lead">{{ . }}</p>{{ end }}
+
+        <div class="aa-prose aa-prose--page {{ if .Params.proseFullWidth }}aa-prose--full{{ end }}">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+

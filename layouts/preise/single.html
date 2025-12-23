@@ -1,0 +1,171 @@
+{{ define "main" }}
+<section class="section">
+  <div class="aa-page">
+    <div class="aa-page__content">
+      <h1 class="aa-h1">{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="aa-lead">{{ . }}</p>{{ end }}
+
+    <!-- Pricing grid (no Materialize cols inside) -->
+    <div class="aa-pricing-grid">
+
+      <!-- Quick-Check -->
+      <div class="aa-pricing-item aa-pricing-item--quick">
+        <div class="card aa-card">
+          <div class="card-content">
+            <span class="card-title aa-card__title">
+              <i class="material-icons">bolt</i>
+              {{ if eq .Site.Language.Lang "de" }}Quick-Check{{ else }}Quick check{{ end }}
+            </span>
+
+            <p class="aa-card__desc grey-text text-darken-2">
+              {{ if eq .Site.Language.Lang "de" }}
+                Für einen schnellen Qualitäts- und Struktur-Check eines Kapitels oder Exposés.
+              {{ else }}
+                Fast quality & structure check for one chapter or an exposé.
+              {{ end }}
+            </p>
+
+            <h5 class="aa-price">89&nbsp;€</h5>
+
+            <ul class="aa-list">
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Kommentiertes Feedback (1 Runde){{ else }}Annotated feedback (1 round){{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Schwerpunkte: Argumentation, Gliederung{{ else }}Focus: argumentation, structure{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}48h Standard-Turnaround{{ else }}48h standard turnaround{{ end }}</span></li>
+            </ul>
+          </div>
+
+          <div class="card-action">
+            <a class="btn aa-btn-primary" href="{{ "/kontakt/" | relLangURL }}">
+              {{ if eq .Site.Language.Lang "de" }}Anfragen{{ else }}Request{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vollständige Betreuung -->
+      <div class="aa-pricing-item aa-pricing-item--full">
+        <div class="card aa-card">
+          <div class="card-content">
+            <span class="card-title aa-card__title">
+              <i class="material-icons">school</i>
+              {{ if eq .Site.Language.Lang "de" }}Vollständige Betreuung{{ else }}Full support{{ end }}
+            </span>
+
+            <p class="aa-card__desc grey-text text-darken-2">
+              {{ if eq .Site.Language.Lang "de" }}
+                Unsere Experten begleiten Sie über den gesamten Schreibprozess – von der Recherche bis zum letzten Wort.
+              {{ else }}
+                Our experts support you through the full writing process — from research to the final word.
+              {{ end }}
+            </p>
+
+            <h5 class="aa-price">499&nbsp;€</h5>
+
+            <ul class="aa-list">
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Vollständiger Zugriff auf unsere „All-in-One“-Plattform{{ else }}Full access to our “all-in-one” platform{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Regelmäßiges Feedback zur aktuellen Version der Arbeit{{ else }}Regular feedback on the current draft{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Wöchentliche individuelle Fragestunden mit den Betreuern{{ else }}Weekly 1:1 Q&A sessions with tutors{{ end }}</span></li>
+            </ul>
+          </div>
+
+          <div class="card-action">
+            <a class="btn aa-btn-primary" href="{{ "/kontakt/" | relLangURL }}">
+              {{ if eq .Site.Language.Lang "de" }}Termin anfragen{{ else }}Request a slot{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-Tages-Workshop (soll unter Quick-Check auf Desktop/Tablet) -->
+      <div class="aa-pricing-item aa-pricing-item--workshop">
+        <div class="card aa-card aa-card--featured">
+          <div class="card-content">
+            <span class="card-title aa-card__title">
+              <i class="material-icons">workspace_premium</i>
+              {{ if eq .Site.Language.Lang "de" }}1-Tages-Workshop{{ else }}1-day workshop{{ end }}
+            </span>
+
+            <p class="aa-card__desc grey-text text-darken-2">
+              {{ if eq .Site.Language.Lang "de" }}
+                Perfekter Start: Thema schärfen, Gliederung bauen, Zeitplan definieren, erste Literaturstrategie.
+              {{ else }}
+                Best kick-off: refine topic, build outline, define schedule, initial literature strategy.
+              {{ end }}
+            </p>
+
+            <h5 class="aa-price">390&nbsp;€</h5>
+
+            <ul class="aa-list">
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}4–5 Stunden (remote){{ else }}4–5 hours (remote){{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Arbeitsplan + Outline als Ergebnis{{ else }}Work plan + outline as outcome{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Q&A + Ressourcenliste{{ else }}Q&A + resource list{{ end }}</span></li>
+            </ul>
+          </div>
+
+          <div class="card-action">
+            <a class="btn aa-btn-primary" href="{{ "/kontakt/" | relLangURL }}">
+              {{ if eq .Site.Language.Lang "de" }}Workshop buchen{{ else }}Book workshop{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Methodik-Sparring (soll rechts neben Workshop auf Tablet, unter Quick auf Desktop: siehe CSS) -->
+      <div class="aa-pricing-item aa-pricing-item--methods">
+        <div class="card aa-card">
+          <div class="card-content">
+            <span class="card-title aa-card__title">
+              <i class="material-icons">school</i>
+              {{ if eq .Site.Language.Lang "de" }}Methodik-Sparring{{ else }}Methods sparring{{ end }}
+            </span>
+
+            <p class="aa-card__desc grey-text text-darken-2">
+              {{ if eq .Site.Language.Lang "de" }}
+                60-min Session zur Forschungsfrage, Design, Hypothesen, Statistik/Quali-Methoden.
+              {{ else }}
+                60-min session on research question, design, hypotheses, stats/qual methods.
+              {{ end }}
+            </p>
+
+            <h5 class="aa-price">129&nbsp;€</h5>
+
+            <ul class="aa-list">
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Live-Call (Video/Audio){{ else }}Live call (video/audio){{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Konkrete Next Steps + Risiken{{ else }}Concrete next steps + risks{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Kurzprotokoll per Mail{{ else }}Short recap by email{{ end }}</span></li>
+            </ul>
+          </div>
+
+          <div class="card-action">
+            <a class="btn aa-btn-primary" href="{{ "/kontakt/" | relLangURL }}">
+              {{ if eq .Site.Language.Lang "de" }}Termin anfragen{{ else }}Request a slot{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hinweise (gleiche linke/rechte Kante, spannt volle Breite des Rasters) -->
+      <div class="aa-pricing-item aa-pricing-notes">
+        <div class="card aa-card">
+          <div class="card-content">
+            <span class="card-title aa-card__title">
+              <i class="material-icons">info</i>
+              {{ if eq .Site.Language.Lang "de" }}Hinweise{{ else }}Notes{{ end }}
+            </span>
+
+            <ul class="aa-list">
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Alle Preise sind Beispielpreise zur Orientierung.{{ else }}All prices are examples for orientation.{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Je nach Fach, Umfang und Deadline kann der Aufwand variieren.{{ else }}Effort may vary by field, scope, and deadline.{{ end }}</span></li>
+              <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Bitte nennen Sie kurz Thema, Studiengang, Abgabedatum.{{ else }}Please share topic, program, and deadline.{{ end }}</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /aa-pricing-grid -->
+
+  </div>
+</section>
+{{ end }}
+
+

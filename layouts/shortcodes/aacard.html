@@ -1,0 +1,15 @@
+{{ $title := .Get "title" | default "" }}
+{{ $icon := .Get "icon" | default "" }}
+
+<div class="card aa-card">
+  <div class="card-content">
+    {{ if or $title $icon }}
+    <span class="card-title aa-card__title">
+      {{ if $icon }}<i class="material-icons left">{{ $icon }}</i>{{ end }}{{ $title }}
+    </span>
+    {{ end }}
+    <div class="aa-card__body">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>

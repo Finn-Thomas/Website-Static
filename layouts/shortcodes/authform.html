@@ -1,0 +1,178 @@
+{{ $type := .Get "type" | default "login" }}
+{{ $lang := .Site.Language.Lang }}
+
+{{/* Resolve paths (kept consistent across languages) */}}
+{{ $loginUrl := "/login/" | relLangURL }}
+{{ $registerUrl := "/register/" | relLangURL }}
+{{ $forgotUrl := "/forgot-password/" | relLangURL }}
+{{ $contactUrl := "/kontakt/" | relLangURL }}
+
+{{ if eq $type "login" }}
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">lock</i>{{ if eq $lang "de" }}Login{{ else }}Login{{ end }}</span>
+        <p class="grey-text text-darken-2">
+          {{ if eq $lang "de" }}
+            Diese Seite ist aktuell eine <strong>statische Demo</strong>. Später kann hier echte Authentifizierung (z. B. Auth0, Firebase, Keycloak) angebunden werden.
+          {{ else }}
+            This page is currently a <strong>static demo</strong>. You can later connect real authentication (e.g., Auth0, Firebase, Keycloak).
+          {{ end }}
+        </p>
+
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="login_email" type="email" required>
+              <label for="login_email">{{ if eq $lang "de" }}E‑Mail{{ else }}Email{{ end }}</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="login_password" type="password" required>
+              <label for="login_password">{{ if eq $lang "de" }}Passwort{{ else }}Password{{ end }}</label>
+            </div>
+          </div>
+
+          <button class="btn aa-btn-primary" type="button" onclick="M.toast({html: '{{ if eq $lang "de" }}Demo: Keine echte Anmeldung konfiguriert.{{ else }}Demo: No real authentication configured.{{ end }}'})">
+            {{ if eq $lang "de" }}Anmelden{{ else }}Sign in{{ end }}
+          </button>
+
+          <div class="aa-authlinks" style="margin-top:14px; display:flex; gap:14px; flex-wrap:wrap">
+            <a class="grey-text text-darken-2" href="{{ $registerUrl }}">{{ if eq $lang "de" }}Registrieren{{ else }}Create account{{ end }}</a>
+            <a class="grey-text text-darken-2" href="{{ $forgotUrl }}">{{ if eq $lang "de" }}Passwort vergessen?{{ else }}Forgot password?{{ end }}</a>
+            <a class="grey-text text-darken-2" href="{{ $contactUrl }}">{{ if eq $lang "de" }}Hilfe / Kontakt{{ else }}Help / contact{{ end }}</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">info</i>{{ if eq $lang "de" }}Hinweis{{ else }}Note{{ end }}</span>
+        <p class="grey-text text-darken-2">
+          {{ if eq $lang "de" }}
+            Für einen schnellen Time-to-Market kann Login zunächst entfallen (Leadgen via Kontakt/Workshop). Sobald Produktfeatures (Chat, Kalender, Dokumente) kommen, lohnt sich ein Auth-Layer.
+          {{ else }}
+            For fast time-to-market you can stay lead-gen only (contact/workshop). Once product features (chat, calendar, documents) arrive, an auth layer becomes worthwhile.
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ if eq $type "register" }}
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">person_add</i>{{ if eq $lang "de" }}Registrieren{{ else }}Register{{ end }}</span>
+        <p class="grey-text text-darken-2">
+          {{ if eq $lang "de" }}
+            Platzhalter für ein späteres Registrierungs-Feature.
+          {{ else }}
+            Placeholder for a future sign-up feature.
+          {{ end }}
+        </p>
+
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="reg_name" type="text" required>
+              <label for="reg_name">{{ if eq $lang "de" }}Name{{ else }}Name{{ end }}</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="reg_email" type="email" required>
+              <label for="reg_email">{{ if eq $lang "de" }}E‑Mail{{ else }}Email{{ end }}</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="reg_password" type="password" required>
+              <label for="reg_password">{{ if eq $lang "de" }}Passwort{{ else }}Password{{ end }}</label>
+            </div>
+          </div>
+
+          <button class="btn aa-btn-primary" type="button" onclick="M.toast({html: '{{ if eq $lang "de" }}Demo: Registrierung ist noch nicht angebunden.{{ else }}Demo: Registration is not connected yet.{{ end }}'})">
+            {{ if eq $lang "de" }}Konto erstellen{{ else }}Create account{{ end }}
+          </button>
+
+          <div class="aa-authlinks" style="margin-top:14px; display:flex; gap:14px; flex-wrap:wrap">
+            <a class="grey-text text-darken-2" href="{{ $loginUrl }}">{{ if eq $lang "de" }}Zum Login{{ else }}Back to login{{ end }}</a>
+            <a class="grey-text text-darken-2" href="{{ $contactUrl }}">{{ if eq $lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">shield</i>{{ if eq $lang "de" }}Datenschutz{{ else }}Privacy{{ end }}</span>
+        <p class="grey-text text-darken-2">
+          {{ if eq $lang "de" }}
+            Sobald echte Konten eingeführt werden: Passwort-Policy, Consent, Logging, DSGVO-Infos und Datenminimierung sauber definieren.
+          {{ else }}
+            Once real accounts are introduced: define password policy, consent, logging, and privacy/data-minimization properly.
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ if eq $type "forgot" }}
+<div class="row">
+  <div class="col s12 m7">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">key</i>{{ if eq $lang "de" }}Passwort zurücksetzen{{ else }}Password reset{{ end }}</span>
+        <p class="grey-text text-darken-2">
+          {{ if eq $lang "de" }}
+            Platzhalter: Später wird ein Reset-Link per E‑Mail versendet (Token-basiert).
+          {{ else }}
+            Placeholder: later this will send a reset link via email (token-based).
+          {{ end }}
+        </p>
+
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="fp_email" type="email" required>
+              <label for="fp_email">{{ if eq $lang "de" }}E‑Mail{{ else }}Email{{ end }}</label>
+            </div>
+          </div>
+
+          <button class="btn aa-btn-primary" type="button" onclick="M.toast({html: '{{ if eq $lang "de" }}Demo: Kein Reset-Backend konfiguriert.{{ else }}Demo: No reset backend configured.{{ end }}'})">
+            {{ if eq $lang "de" }}Reset-Link anfordern{{ else }}Request reset link{{ end }}
+          </button>
+
+          <div class="aa-authlinks" style="margin-top:14px; display:flex; gap:14px; flex-wrap:wrap">
+            <a class="grey-text text-darken-2" href="{{ $loginUrl }}">{{ if eq $lang "de" }}Zum Login{{ else }}Back to login{{ end }}</a>
+            <a class="grey-text text-darken-2" href="{{ $contactUrl }}">{{ if eq $lang "de" }}Kontakt{{ else }}Contact{{ end }}</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m5">
+    <div class="card aa-card">
+      <div class="card-content">
+        <span class="card-title aa-card__title"><i class="material-icons left">tips_and_updates</i>{{ if eq $lang "de" }}Implementationshinweis{{ else }}Implementation note{{ end }}</span>
+        <p class="grey-text text-darken-2" style="margin-bottom:0">
+          {{ if eq $lang "de" }}Für ein echtes Reset-Feature:{{ else }}For a real reset flow:{{ end }}
+        </p>
+        <ul class="aa-list">
+          <li><i class="material-icons">check</i>{{ if eq $lang "de" }}zeitlich begrenzte Tokens{{ else }}time-limited tokens{{ end }}</li>
+          <li><i class="material-icons">check</i>{{ if eq $lang "de" }}Rate-Limits gegen Abuse{{ else }}rate-limiting{{ end }}</li>
+          <li><i class="material-icons">check</i>{{ if eq $lang "de" }}keine Auskunft, ob E‑Mail existiert{{ else }}don’t disclose account existence{{ end }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

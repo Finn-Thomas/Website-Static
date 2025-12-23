@@ -1,0 +1,169 @@
+{{ define "main" }}
+<section class="section">
+  <div class="row aa-betreuer">
+
+    <div class="col s12 m7">
+      <h1 class="aa-h1">{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="aa-lead">{{ . }}</p>
+      {{ end }}
+
+      {{ if eq .Site.Language.Lang "de" }}
+        <p class="grey-text text-darken-3">
+          Adeptus Academicus verbindet Schreibende mit erfahrenen Betreuerinnen und Betreuern – für <strong>fachliche</strong>, <strong>methodische</strong> und <strong>menschliche</strong> Unterstützung.
+          Wenn Sie Freude daran haben, Wissen weiterzugeben und Studierende zu begleiten, sind Sie hier genau richtig.
+        </p>
+        <p class="grey-text text-darken-3">
+          Als junges Start-up möchten wir unseren Kundinnen und Kunden ein breites Angebot an Expertise bieten und hoffen, Sie für unsere Mission begeistern zu können.
+        </p>
+      {{ else }}
+        <p class="grey-text text-darken-3">
+          Adeptus Academicus connects writers with experienced tutors—for <strong>subject matter</strong>, <strong>methodology</strong>, and <strong>human support</strong>.
+          If you enjoy mentoring students and sharing real academic experience, this is for you.
+        </p>
+        <p class="grey-text text-darken-3">
+          As a young start-up, we aim to offer a broad range of expertise and hope to inspire you to join our mission.
+        </p>
+      {{ end }}
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">mail</i>{{ if eq .Site.Language.Lang "de" }}Kommunikation{{ else }}Communication{{ end }}</span>
+          <ul class="aa-list">
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Zuverlässige und schnelle Kommunikation mit einem jungen Team{{ else }}Fast, reliable communication with a lean, responsive team{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Einfache Vermittlung von Kundinnen und Kunden{{ else }}Simple matching with suitable clients{{ end }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">payments</i>{{ if eq .Site.Language.Lang "de" }}Finanziell attraktiv{{ else }}Financial upside{{ end }}</span>
+          <ul class="aa-list">
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}(Nebenbei-)Verdienstmöglichkeiten mit transparentem Modell{{ else }}Side income with a transparent model{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Klare Paketlogik der Angebote{{ else }}Clear packages (e.g., quick review, chapter feedback, methods sparring){{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Feste Preisstruktur{{ else }}Predictable sessions and transparent billing{{ end }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">volunteer_activism</i>{{ if eq .Site.Language.Lang "de" }}Sinnstiftung{{ else }}Purpose{{ end }}</span>
+          <ul class="aa-list">
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Wissen weitergeben, Kontakt zu jungen Menschen{{ else }}Share knowledge and support students{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Wertschätzung und Anerkennung durch sichtbaren Impact{{ else }}Appreciation through visible impact{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Begleitung mit echter Erfahrung und Empathie (nicht „nur KI“){{ else }}Real experience and empathy—not “just AI”{{ end }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">schedule</i>{{ if eq .Site.Language.Lang "de" }}Vorteile der Tätigkeit{{ else }}Benefits{{ end }}</span>
+          <ul class="aa-list">
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Freie Zeiteinteilung{{ else }}Flexible scheduling{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Remote-Arbeit{{ else }}Remote work{{ end }}</li>
+            <li><i class="material-icons">check</i>{{ if eq .Site.Language.Lang "de" }}Kontakt zu aktuellen Fragestellungen{{ else }}Stay close to current academic topics{{ end }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">gavel</i>{{ if eq .Site.Language.Lang "de" }}Steuerliche Einordnung (Hinweis){{ else }}Tax note (non-binding){{ end }}</span>
+          <p class="grey-text text-darken-2" style="margin-bottom:0">
+            {{ if eq .Site.Language.Lang "de" }}
+              Je nach Ausgestaltung kann die Tätigkeit als <strong>selbstständig</strong> oder unter Umständen als <strong>freiberuflich</strong> einzuordnen sein.
+              Im Einzelfall empfehlen wir professionelle Beratung.
+            {{ else }}
+              Depending on structure, the work may be treated as <strong>self-employment</strong> or, in some cases, a <strong>liberal profession</strong>.
+              This is not legal or tax advice—onboarding clarifies the setup and we recommend professional guidance if needed.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col s12 m5 aa-betreuer__sidebar">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">send</i>{{ if eq .Site.Language.Lang "de" }}Haben Sie Fragen oder möchten Sie sich bewerben?{{ else }}Questions or want to apply?{{ end }}</span>
+
+          {{ if eq .Site.Language.Lang "de" }}
+            <p class="grey-text text-darken-2">
+              Schreiben Sie uns gerne eine kurze Nachricht.
+            </p>
+            <p class="grey-text text-darken-2">
+              Für eine Bewerbung fügen Sie bitte folgende Informationen Ihrer E-Mail hinzu: <strong>Fachbereich</strong>, <strong>Erfahrung</strong>, <strong>Verfügbarkeit</strong>. Wir melden uns zeitnah.
+            </p>
+          {{ else }}
+            <p class="grey-text text-darken-2">
+              A short message is enough: <strong>field</strong>, <strong>experience</strong>, <strong>availability</strong>. We will get back to you quickly.
+            </p>
+          {{ end }}
+
+          {{/* Simple static form; integrate backend later */}}
+          {{ $action := .Site.Params.forms.contactAction | default "" }}
+          {{ if $action }}
+            <form method="post" action="{{ $action }}">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="t_name" name="name" type="text" required>
+                  <label for="t_name">{{ if eq .Site.Language.Lang "de" }}Name{{ else }}Name{{ end }}</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="t_email" name="email" type="email" required>
+                  <label for="t_email">{{ if eq .Site.Language.Lang "de" }}E‑Mail{{ else }}Email{{ end }}</label>
+                </div>
+                <div class="input-field col s12">
+                  <textarea id="t_msg" name="message" class="materialize-textarea" required></textarea>
+                  <label for="t_msg">{{ if eq .Site.Language.Lang "de" }}Kurzprofil / Nachricht{{ else }}Short profile / message{{ end }}</label>
+                </div>
+              </div>
+              <input type="hidden" name="formType" value="tutor">
+              <button class="btn aa-btn-primary" type="submit">{{ if eq .Site.Language.Lang "de" }}Bewerbung senden{{ else }}Send application{{ end }}</button>
+            </form>
+          {{ else }}
+            <div class="aa-note">
+              <p class="grey-text text-darken-2" style="margin-bottom:10px">
+                {{ if eq .Site.Language.Lang "de" }}
+                  Nutzen Sie gerne unsere E‑Mail:
+                {{ else }}
+                  (Demo) No form endpoint configured. Please use email:
+                {{ end }}
+                <a href="mailto:{{ .Site.Params.forms.contactEmail | default "hello@example.com" }}">{{ .Site.Params.forms.contactEmail | default "hello@example.com" }}</a>
+              </p>
+              <a class="btn aa-btn-primary" href="mailto:{{ .Site.Params.forms.contactEmail | default "hello@example.com" }}">
+                {{ if eq .Site.Language.Lang "de" }}E‑Mail schreiben{{ else }}Email us{{ end }}
+              </a>
+            </div>
+          {{ end }}
+
+          <div class="divider" style="margin:18px 0"></div>
+          <p class="grey-text text-darken-2" style="margin:0">
+            {{ if eq .Site.Language.Lang "de" }}Alternativ erreichen Sie uns über unsere{{ else }}Alternatively:{{ end }}
+            <a href="{{ "/kontakt/" | relLangURL }}">{{ if eq .Site.Language.Lang "de" }}Kontaktseite{{ else }}contact page{{ end }}</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title"><i class="material-icons left">lightbulb</i>{{ if eq .Site.Language.Lang "de" }}Ausblick{{ else }}Roadmap{{ end }}</span>
+          <p class="grey-text text-darken-2" style="margin-bottom:0">
+            {{ if eq .Site.Language.Lang "de" }}
+              Aktuell entwickeln wir Funktionen wie Chat, Video-Calls, gemeinsames Dokument-Editing, Kalender und Aufgaben.
+              Das <strong>All-in-One-Konzept</strong> von <strong>Adeptus Academicus</strong> sorgt für optimale Kommunikation zwischen Studierenden und Betreuerinnen und Betreuern.
+            {{ else }}
+              Later: chat, video calls, collaborative documents, calendar & tasks. For now, we keep it intentionally lean.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

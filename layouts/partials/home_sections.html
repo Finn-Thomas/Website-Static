@@ -1,0 +1,271 @@
+{{/* Home sections in a Material Design style */}}
+{{ $lang := .Site.Language.Lang }}
+
+<section class="aa-hero2 z-depth-1">
+  <div class="row aa-hero2__row" style="margin-bottom:0">
+    <div class="col s12 m6 aa-hero2__text">
+      <div class="aa-hero2__kicker">
+        {{ with .Params.hero.kicker }}{{ . }}{{ else }}{{ if eq $lang "de" }}Coaching für Ihre Abschlussarbeit.{{ else }}Coaching for your thesis.{{ end }}{{ end }}
+      </div>
+
+      {{ $headline := .Params.hero.headline }}
+      {{ with .Params.hero.highlight }}
+        {{ $headline = replace $headline . (printf "<span class=\"aa-hero2__accent\">%s</span>" .) }}
+      {{ end }}
+      <h1 class="aa-hero2__headline">{{ $headline | safeHTML }}</h1>
+
+      <p class="aa-hero2__subline">{{ .Params.hero.subline }}</p>
+
+      <div class="aa-hero2__actions">
+        <a class="btn aa-btn-hero" href="{{ .Params.hero.primaryCta.url | relLangURL }}">{{ .Params.hero.primaryCta.label }}</a>
+        <a class="btn-flat aa-btn-hero-ghost" href="{{ .Params.hero.secondaryCta.url | relLangURL }}">{{ .Params.hero.secondaryCta.label }}</a>
+        <a class="btn-flat aa-btn-hero-ghost" href="{{ .Params.hero.tertiaryCta.url | relLangURL }}">{{ .Params.hero.tertiaryCta.label }}</a>
+      </div>
+
+      <ul class="aa-hero2__bullets">
+        {{ with .Params.hero.bullets }}
+          {{ range . }}
+            <li><i class="material-icons">check</i><span>{{ . }}</span></li>
+          {{ end }}
+        {{ else }}
+          <li><i class="material-icons">check</i><span>{{ if eq $lang "de" }}1‑zu‑1 Betreuung{{ else }}1:1 support{{ end }}</span></li>
+          <li><i class="material-icons">check</i><span>{{ if eq $lang "de" }}Klarer Plan bis zur Abgabe{{ else }}Clear plan to submission{{ end }}</span></li>
+          <li><i class="material-icons">check</i><span>{{ if eq $lang "de" }}Feedback zu Methodik & Text{{ else }}Feedback on methods & writing{{ end }}</span></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="col s12 m6 aa-hero2__media">
+      <div class="aa-hero2__image-wrap">
+        <img src="{{ .Params.hero.image }}" alt="" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Slider */}}
+{{ $items := slice }}
+{{ with (index .Site.Data $lang) }}{{ with (index . "home_slider") }}{{ $items = . }}{{ end }}{{ end }}
+
+{{ if gt (len $items) 0 }}
+<section class="aa-section">
+  <div class="aa-wrap aa-wrap--alt">
+    <div class="row">
+      <div class="col s12">
+        <div class="aa-section__head">
+          <h2 class="aa-h2">{{ if eq $lang "de" }}Einfacher Ablauf{{ else }}Simple process{{ end }}</h2>
+        </div>
+
+        <div class="slider aa-slider">
+          <ul class="slides">
+            {{ range $items }}
+            <li>
+              <img src="{{ .image }}" alt="" loading="lazy">
+              <div class="caption left-align">
+                <h3 class="aa-slider__title">{{ .title }}</h3>
+                <h5 class="aa-slider__text">{{ .text }}</h5>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<section class="aa-section">
+  <div class="aa-wrap">
+    <div class="row">
+      <div class="col s12">
+        <div class="aa-section__head">
+          <h2 class="aa-h2">{{ if eq $lang "de" }}Kernbotschaft{{ else }}Core message{{ end }}</h2>
+        </div>
+
+      <p class="aa-paragraph">
+        {{ if eq $lang "de" }}
+          Sie schreiben Ihre Arbeit nicht „irgendwie fertig“, sondern entwickeln Schritt für Schritt eine belastbare Argumentation, eine saubere Methodik und einen roten Faden, der zu Ihrer Fragestellung passt.
+          Wir arbeiten dabei wie ein erfahrener Sparringspartner: Wir sortieren Prioritäten, prüfen die Logik Ihrer Gliederung, geben präzises Feedback zu Text, Statistik und Darstellung – und wir halten Sie durch die kritischen Phasen handlungsfähig.
+        {{ else }}
+          You do not merely “get it done.” You build a defensible argument, a clean methodology, and a clear narrative that fits your research question—step by step.
+          We work as an experienced sparring partner: we set priorities, stress‑test your outline and logic, give precise feedback on text, statistics, and presentation, and keep you effective through the critical phases.
+        {{ end }}
+      </p>
+      <p class="aa-paragraph aa-paragraph--muted">
+        {{ if eq $lang "de" }}
+          KI kann dabei unterstützen (z. B. beim Strukturieren oder Formulieren). Den entscheidenden Unterschied machen jedoch menschliche Fachkompetenz, Kontextverständnis und Verantwortung – damit Ihr Ergebnis wissenschaftlich belastbar bleibt.
+        {{ else }}
+          AI can assist (e.g., for structuring or phrasing). The decisive difference, however, is human expertise, contextual judgement, and accountability—so your outcome remains academically defensible.
+        {{ end }}
+      </p>
+      </div>
+    </div>
+
+    <div class="row aa-equal-cards-row">
+    <div class="col s12 m6">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">
+            <i class="material-icons left">psychology</i>
+            {{ if eq $lang "de" }}Menschliche Betreuung + KI als Werkzeug{{ else }}Human guidance + AI as a tool{{ end }}
+          </span>
+          <p class="grey-text text-darken-2">
+            {{ if eq $lang "de" }}
+              KI-Tools wie ChatGPT können sinnvoll sein – wenn man sie richtig einsetzt. Wir helfen Ihnen, KI verantwortungsvoll zu nutzen und sichern wissenschaftliche Standards.
+            {{ else }}
+              Tools like ChatGPT can be useful—if used responsibly. We help you apply AI safely while keeping academic standards intact.
+            {{ end }}
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="{{ "/ki-hinweis/" | relLangURL }}">{{ if eq $lang "de" }}Warum nicht einfach ChatGPT schreiben lassen?{{ else }}Why not just let ChatGPT write it?{{ end }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">
+            <i class="material-icons left">assignment_turned_in</i>
+            {{ if eq $lang "de" }}Was Sie bekommen{{ else }}What you get{{ end }}
+          </span>
+          <ul class="aa-list">
+            <li><i class="material-icons">check</i> {{ if eq $lang "de" }}Struktur & Argumentationslogik{{ else }}Structure & argument{{ end }}</li>
+            <li><i class="material-icons">check</i> {{ if eq $lang "de" }}Methodik & Studiendesign{{ else }}Methodology & design{{ end }}</li>
+            <li><i class="material-icons">check</i> {{ if eq $lang "de" }}Statistik & Reporting{{ else }}Statistics & reporting{{ end }}</li>
+            <li><i class="material-icons">check</i> {{ if eq $lang "de" }}Emotionale Entlastung{{ else }}Emotional relief{{ end }}</li>
+          </ul>
+        </div>
+        <div class="card-action aa-card-action--placeholder">
+          <span aria-hidden="true">&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel aa-cta z-depth-1">
+          <div class="row" style="margin-bottom:0">
+            <div class="col s12 m8">
+              <h5 class="aa-cta__title">{{ if eq $lang "de" }}Starten Sie mit Klarheit statt Chaos.{{ else }}Start with clarity—not chaos.{{ end }}</h5>
+              <p class="grey-text text-darken-2" style="margin:0">
+                {{ if eq $lang "de" }}
+                  Schicken Sie Thema, Fachbereich und Deadline – wir melden uns mit einem konkreten Plan.
+                {{ else }}
+                  Send your topic, field, and deadline—we’ll respond with a concrete plan.
+                {{ end }}
+              </p>
+            </div>
+            <div class="col s12 m4 aa-cta__btn">
+              <a class="btn aa-btn-primary right" href="{{ "/kontakt/" | relLangURL }}">{{ i18n "nav_contact" }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Human vs AI section (replaces testimonials) */}}
+<section class="aa-section">
+  <div class="aa-wrap aa-wrap--alt">
+    <div class="row">
+      <div class="col s12">
+        <div class="aa-section__head">
+          <h2 class="aa-h2">{{ if eq $lang "de" }}Warum menschliche Betreuung mehr bringt als KI‑Text{{ else }}Why human guidance beats AI‑only writing{{ end }}</h2>
+          <p class="aa-paragraph aa-paragraph--muted">
+            {{ if eq $lang "de" }}
+              KI kann Text generieren – aber keine Verantwortung übernehmen. Gute Arbeiten entstehen durch Urteilskraft, Fachverständnis und eine Betreuung, die Ihren konkreten Kontext kennt.
+            {{ else }}
+              AI can generate text—but it cannot take responsibility. Strong theses are built on judgement, domain understanding, and guidance that knows your specific context.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row aa-equal-cards-row">
+    <div class="col s12 m4">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">
+            <i class="material-icons left">account_tree</i>
+            {{ if eq $lang "de" }}Kontext & Argumentationslogik{{ else }}Context & argument logic{{ end }}
+          </span>
+          <p class="grey-text text-darken-2">
+            {{ if eq $lang "de" }}
+              Wir prüfen, ob Ihre Fragestellung, Theorie, Methodik und Ergebnisse wirklich zusammenpassen – und helfen, Widersprüche früh zu erkennen.
+            {{ else }}
+              We verify that your research question, theory, methods, and results actually fit—and help you catch contradictions early.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">
+            <i class="material-icons left">verified</i>
+            {{ if eq $lang "de" }}Wissenschaftliche Standards & Ethik{{ else }}Academic standards & integrity{{ end }}
+          </span>
+          <p class="grey-text text-darken-2">
+            {{ if eq $lang "de" }}
+              Zitieren, Methodentransparenz, Datenlogik: Wir sichern saubere Arbeitsschritte und zeigen, wie KI zulässig und nachvollziehbar eingesetzt werden kann.
+            {{ else }}
+              Citations, methodological transparency, data logic: we enforce clean workflows and show how AI can be used responsibly and traceably.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card aa-card">
+        <div class="card-content">
+          <span class="card-title aa-card__title">
+            <i class="material-icons left">handshake</i>
+            {{ if eq $lang "de" }}Feedback, Motivation, Verbindlichkeit{{ else }}Feedback, momentum, accountability{{ end }}
+          </span>
+          <p class="grey-text text-darken-2">
+            {{ if eq $lang "de" }}
+              Menschen helfen Ihnen, Entscheidungen zu treffen, Prioritäten zu halten und Stress zu reduzieren – mit klaren nächsten Schritten statt endloser Prompt‑Schleifen.
+            {{ else }}
+              Humans help you decide, keep priorities straight, and reduce stress—with clear next steps instead of endless prompt loops.
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+{{/* FAQ */}}
+{{ $faqs := slice }}
+{{ with (index .Site.Data $lang) }}{{ with (index . "faqs") }}{{ $faqs = . }}{{ end }}{{ end }}
+{{ if gt (len $faqs) 0 }}
+<section class="aa-section">
+  <div class="aa-wrap">
+    <div class="row">
+      <div class="col s12">
+        <div class="aa-section__head">
+          <h2 class="aa-h2">FAQ</h2>
+        </div>
+
+        <ul class="collapsible aa-collapsible">
+          {{ range $faqs }}
+            <li>
+              <div class="collapsible-header"><i class="material-icons">help_outline</i>{{ .q }}</div>
+              <div class="collapsible-body"><span class="grey-text text-darken-2">{{ .a }}</span></div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

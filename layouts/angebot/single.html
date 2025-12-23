@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="aa-section">
+  <h1 class="aa-h1">{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="aa-lead">{{ . }}</p>{{ end }}
+
+  <div class="aa-cardgrid aa-cardgrid--2">
+  <div class="card aa-card">
+    <div class="card-content">
+      <span class="card-title aa-card__title"><i class="material-icons left">star</i>Highlights</span>
+      <ul class="aa-list">
+        {{ range .Params.highlights }}<li><i class="material-icons">check</i>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <div class="card aa-card">
+    <div class="card-content">
+      <span class="card-title aa-card__title"><i class="material-icons left">task_alt</i>Deliverables</span>
+      <ul class="aa-list">
+        {{ range .Params.deliverables }}<li><i class="material-icons">check</i>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="aa-prose">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}

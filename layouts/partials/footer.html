@@ -1,0 +1,35 @@
+<footer class="page-footer white aa-footer">
+  <div class="container">
+    <div class="row" style="margin-bottom:0">
+      <div class="col s12 m6">
+        <div class="aa-footer__brand">
+          <img src="{{ .Site.Params.brand.logo }}" alt="" width="28" height="28" />
+          <span>{{ .Site.Params.brand.name }}</span>
+        </div>
+        <p class="grey-text text-darken-2">{{ .Site.Params.brand.tagline }}</p>
+        <div class="aa-footer__links">
+          <a href="{{ "/ki-hinweis/" | relLangURL }}">{{ i18n "nav_ai" }}</a>
+          <a href="{{ "/betreuer/" | relLangURL }}">{{ i18n "nav_apply" }}</a>
+        </div>
+      </div>
+
+      <div class="col s12 m3">
+        <h6 class="aa-footer__title">{{ i18n "nav_contact" }}</h6>
+        <p class="grey-text text-darken-2" style="margin:0">
+          <a href="mailto:{{ .Site.Params.forms.contactEmail }}">{{ .Site.Params.forms.contactEmail }}</a>
+        </p>
+      </div>
+
+      <div class="col s12 m3">
+        <h6 class="aa-footer__title">{{ i18n "footer_legal" }}</h6>
+        <p style="margin:0"><a href="{{ "/impressum/" | relLangURL }}">{{ if eq .Site.Language.Lang "de" }}Impressum{{ else }}Legal Notice{{ end }}</a></p>
+        <p style="margin:0"><a href="{{ "/datenschutz/" | relLangURL }}">{{ if eq .Site.Language.Lang "de" }}Datenschutz{{ else }}Privacy{{ end }}</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container grey-text text-darken-2">
+      © {{ now.Year }} {{ .Site.Title }}. {{ i18n "footer_rights" }}
+    </div>
+  </div>
+</footer>

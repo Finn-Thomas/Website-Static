@@ -1,0 +1,21 @@
+<div class="aa-langswitch">
+  {{ $cur := .Site.Language.Lang }}
+  {{ range sort .Site.Sites "Language.Weight" }}
+    {{ $site := . }}
+    {{ $href := $site.Home.RelPermalink }}
+
+    {{ with $.Page }}
+      {{ $matches := where .AllTranslations "Lang" $site.Language.Lang }}
+      {{ if gt (len $matches) 0 }}
+        {{ $href = (index $matches 0).RelPermalink }}
+      {{ end }}
+    {{ end }}
+
+    <a class="aa-langchip {{ if eq $cur $site.Language.Lang }}aa-langchip--active{{ end }}" href="{{ $href }}" {{ if eq $cur $site.Language.Lang }}aria-current="page"{{ end }}>
+      {{ with $site.Params.i18n.flag }}
+        <img src="{{ . }}" alt="{{ $site.Language.LanguageName }} flag" width="18" height="18" loading="lazy">
+      {{ end }}
+      <span>{{ $site.Params.i18n.label }}</span>
+    </a>
+  {{ end }}
+</div>

@@ -1,0 +1,14 @@
+- id: nav_contact
+  translation: "Contact"
+- id: nav_apply
+  translation: "Become a tutor"
+- id: nav_ai
+  translation: "AI note"
+- id: footer_legal
+  translation: "Legal"
+- id: footer_rights
+  translation: "All rights reserved."
+- id: skip_to_content
+  translation: "Skip to content"
+- id: nav_login
+  translation: "Login"

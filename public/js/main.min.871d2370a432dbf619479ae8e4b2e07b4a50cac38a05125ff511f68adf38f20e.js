@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e,t,n=document.querySelectorAll(".sidenav");M.Sidenav.init(n,{edge:"left"}),e=document.querySelectorAll(".slider"),M.Slider.init(e,{indicators:!0,height:420,interval:6500,duration:450}),t=document.querySelectorAll(".collapsible"),M.Collapsible.init(t,{})})
