@@ -25,7 +25,9 @@
               {{ end }}
             </p>
 
-            <h5 class="aa-price">89&nbsp;€</h5>
+            <h5 class="aa-price">
+              89&nbsp;{{ if eq .Site.Language.Lang "en" }}${{ else }}€{{ end }}
+            </h5>
 
             <ul class="aa-list">
               <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Kommentiertes Feedback (1 Runde){{ else }}Annotated feedback (1 round){{ end }}</span></li>
@@ -59,7 +61,9 @@
               {{ end }}
             </p>
 
-            <h5 class="aa-price">499&nbsp;€</h5>
+            <h5 class="aa-price">
+              499&nbsp;{{ if eq .Site.Language.Lang "en" }}${{ else }}€{{ end }}
+            </h5>
 
             <ul class="aa-list">
               <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Vollständiger Zugriff auf unsere „All-in-One“-Plattform{{ else }}Full access to our “all-in-one” platform{{ end }}</span></li>
@@ -76,7 +80,7 @@
         </div>
       </div>
 
-      <!-- 1-Tages-Workshop (soll unter Quick-Check auf Desktop/Tablet) -->
+      <!-- 1-Tages-Workshop -->
       <div class="aa-pricing-item aa-pricing-item--workshop">
         <div class="card aa-card aa-card--featured">
           <div class="card-content">
@@ -93,7 +97,9 @@
               {{ end }}
             </p>
 
-            <h5 class="aa-price">390&nbsp;€</h5>
+            <h5 class="aa-price">
+              390&nbsp;{{ if eq .Site.Language.Lang "en" }}${{ else }}€{{ end }}
+            </h5>
 
             <ul class="aa-list">
               <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}4–5 Stunden (remote){{ else }}4–5 hours (remote){{ end }}</span></li>
@@ -110,7 +116,7 @@
         </div>
       </div>
 
-      <!-- Methodik-Sparring (soll rechts neben Workshop auf Tablet, unter Quick auf Desktop: siehe CSS) -->
+      <!-- Methodik-Sparring -->
       <div class="aa-pricing-item aa-pricing-item--methods">
         <div class="card aa-card">
           <div class="card-content">
@@ -127,7 +133,9 @@
               {{ end }}
             </p>
 
-            <h5 class="aa-price">129&nbsp;€</h5>
+            <h5 class="aa-price">
+              129&nbsp;{{ if eq .Site.Language.Lang "en" }}${{ else }}€{{ end }}
+            </h5>
 
             <ul class="aa-list">
               <li><i class="material-icons">check</i><span class="aa-list__text">{{ if eq .Site.Language.Lang "de" }}Live-Call (Video/Audio){{ else }}Live call (video/audio){{ end }}</span></li>
@@ -144,7 +152,7 @@
         </div>
       </div>
 
-      <!-- Hinweise (gleiche linke/rechte Kante, spannt volle Breite des Rasters) -->
+      <!-- Hinweise -->
       <div class="aa-pricing-item aa-pricing-notes">
         <div class="card aa-card">
           <div class="card-content">
@@ -167,5 +175,3 @@
   </div>
 </section>
 {{ end }}
-
-
