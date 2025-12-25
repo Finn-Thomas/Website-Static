@@ -44,7 +44,63 @@ nav a{
 /* =========================
    Navbar
 ========================= */
-.aa-nav{ border-bottom: 1px solid rgba(0,0,0,.08); }
+.aa-nav{
+  border-bottom: 1px solid rgba(0,0,0,.08);
+
+  /*
+    Ensure every interactive element in the top bar is vertically centered.
+    Materialize's default navbar uses line-height-based centering, but once we
+    introduce custom inline-flex elements (brand, language chip, CTA button),
+    small baseline differences can make items look "off".
+
+    We therefore pin the navbar height and center children with flex.
+  */
+  --aa-nav-height: 64px;
+  height: var(--aa-nav-height);
+}
+
+@media (max-width: 600px){
+  .aa-nav{ --aa-nav-height: 56px; }
+}
+
+.aa-nav .nav-wrapper{
+  height: var(--aa-nav-height);
+}
+
+/* Make the major blocks participate in height-based flex centering */
+.aa-nav .brand-logo,
+.aa-nav .sidenav-trigger,
+.aa-nav .aa-navlinks,
+.aa-nav .aa-navlinks > li{
+  height: 100%;
+}
+
+/* Materialize floats the mobile burger; in a flex navbar this can cause drift */
+.aa-nav .sidenav-trigger{ float:none !important; }
+
+/* Center all topbar anchors/icons regardless of line-height defaults */
+.aa-nav a,
+.aa-nav .sidenav-trigger i{
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Regular nav links should occupy the full bar height and center their text */
+.aa-navlinks > li > a{
+  height: 100%;
+  line-height: 1.2;
+}
+
+/* Brand area should follow the same vertical rhythm */
+.aa-nav .brand-logo{ line-height: 1.2; }
+
+/* Buttons inside the nav should keep Materialize button sizing but be centered */
+.aa-navlinks > li > a.btn{
+  height: 36px;
+  line-height: 36px;
+  margin: 0; /* avoid baseline drift */
+  justify-content: center;
+}
 
 .aa-nav .nav-wrapper{
   display:flex;
@@ -104,6 +160,29 @@ nav a{
 /* Language switcher */
 .aa-langslot{ padding-left:10px; display:flex; align-items:center; }
 .aa-langswitch{ display:inline-flex; gap:8px; align-items:center; flex-wrap:wrap; }
+
+/* Topbar (desktop) centering fix for the language switcher.
+   Materialize navbars rely on a large line-height; inline-flex elements inside a
+   plain block can align to the text baseline and appear slightly "low".
+   Force height-based flex centering for the wrapper + switcher in the navbar. */
+.aa-nav .aa-langslot,
+.aa-nav .aa-langswitch-wrap{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.aa-nav .aa-langswitch{
+  height: 100%;
+  display: flex;      /* block-level flex container avoids baseline alignment */
+  align-items: center;
+  line-height: 1;
+  flex-wrap: nowrap;  /* never wrap in the topbar */
+}
+
+.aa-nav .aa-langchip{ align-self: center; }
+
 
 .aa-langchip{
   display:inline-flex !important;
