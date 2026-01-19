@@ -11,8 +11,8 @@ translationKey: "contact"
 
 <div class="row aa-contact-row">
 
-  <!-- 1 -->
-  <div class="col s12 m6 l3">
+  <!-- Email -->
+  <div class="col s12 m6">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -45,8 +45,8 @@ translationKey: "contact"
     </div>
   </div>
 
-  <!-- 2 -->
-  <div class="col s12 m6 l3">
+  <!-- WhatsApp & Phone -->
+  <div class="col s12 m6">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -54,7 +54,7 @@ translationKey: "contact"
         </span>
 
         <p class="grey-text text-darken-2" style="margin-top:0">
-          If email is inconvenient, message us on WhatsApp or call during office hours.
+          If email is inconvenient, message us on WhatsApp or call us directly.
         </p>
 
         <ul class="aa-list">
@@ -64,53 +64,22 @@ translationKey: "contact"
               <strong>WhatsApp/Phone:</strong> <a href="tel:+4915112345678">+49 151 12345678</a>
             </span>
           </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text">
-              <strong>Office hours:</strong> Mon–Fri, 9am–6pm
-            </span>
-          </li>
+          
         </ul>
+      </div>
+
+      <div class="card-action aa-card-action--stack">
+        <a class="btn aa-btn-primary" href="https://wa.me/4915112345678">WhatsApp</a>
+        <a class="btn-flat aa-btn-flat" href="tel:+4915112345678">Call</a>
       </div>
     </div>
   </div>
 
-  <!-- 3 -->
-  <div class="col s12 m6 l3">
-    <div class="card aa-card">
-      <div class="card-content">
-        <span class="card-title aa-card__title">
-          <i class="material-icons left">event</i>Intro call
-        </span>
+</div>
 
-        <p class="grey-text text-darken-2" style="margin-top:0">
-          Already have a tutor in mind? In a short intro call you can align on goals, approach, scope, and next steps.
-        </p>
-
-        <ul class="aa-list">
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Duration:</strong> 10–15 minutes</span>
-          </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Format:</strong> remote (video/audio)</span>
-          </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Outcome:</strong> clear plan + recommendation</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="card-action">
-        <a class="btn aa-btn-primary" href="mailto:hello@example.com?subject=Request%20an%20intro%20call">Request intro call</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4 -->
-  <div class="col s12 m6 l3">
+<!-- Note: find the right tutor -->
+<div class="row" style="margin-top:8px">
+  <div class="col s12">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -134,7 +103,6 @@ translationKey: "contact"
       </div>
     </div>
   </div>
-
 </div>
 
 <!-- CTA -->

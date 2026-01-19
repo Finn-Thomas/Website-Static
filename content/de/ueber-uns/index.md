@@ -23,7 +23,7 @@ translationKey: "about"
         Adeptus Academicus verfolgt ein All-in-One-Konzept, das die Betreuung wissenschaftlicher Arbeiten so effizient und transparent wie möglich macht. Unsere Plattform bündelt Kommunikation und Organisation in einem zentralen Workspace: mit direkter Chat-Funktion zwischen Kundinnen und Kunden und Betreuerinnen und Betreuern, strukturierter Versionskontrolle, gemeinsamem Kalender sowie klaren To-do-Listen. So bleibt der gesamte Arbeitsprozess nachvollziehbar, koordiniert und jederzeit unter Kontrolle.
       </p>
 
-      <h3 class="aa-h2" style="margin-top:10px">Die Videoplattform</h3>
+      <h3 class="aa-h3" style="margin-top:10px">Die Videoplattform</h3>
       <p class="aa-lead" style="margin-top:6px">
         Unsere Videoplattform bietet Zugriff auf hochwertig produzierte Lehrvideos mit Tipps und Tricks für das wissenschaftliche Schreiben. Die Lehrvideos bieten eine zusätzliche Möglichkeit, grundlegende Prozesse des wissenschaftlichen Arbeitens zu erlernen und zu meistern.
       </p>

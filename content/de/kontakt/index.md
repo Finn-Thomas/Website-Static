@@ -11,8 +11,8 @@ translationKey: "contact"
 
 <div class="row aa-contact-row">
 
-  <!-- 1 -->
-  <div class="col s12 m6 l3">
+  <!-- E-Mail -->
+  <div class="col s12 m6">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -45,8 +45,8 @@ translationKey: "contact"
     </div>
   </div>
 
-  <!-- 2 -->
-  <div class="col s12 m6 l3">
+  <!-- WhatsApp & Telefon -->
+  <div class="col s12 m6">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -54,7 +54,7 @@ translationKey: "contact"
         </span>
 
         <p class="grey-text text-darken-2" style="margin-top:0">
-          Wenn Ihnen E-Mail zu umständlich ist, schreiben Sie uns gerne per WhatsApp oder rufen Sie uns zu unseren Sprechzeiten an.
+          Wenn Ihnen E-Mail zu umständlich ist, schreiben Sie uns gerne per WhatsApp oder rufen Sie uns an.
         </p>
 
         <ul class="aa-list">
@@ -64,53 +64,21 @@ translationKey: "contact"
               <strong>WhatsApp/Telefon:</strong> <a href="tel:+4915112345678">+49 151 12345678</a>
             </span>
           </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text">
-              <strong>Sprechzeiten:</strong> Mo–Fr, 9–18 Uhr
-            </span>
-          </li>
         </ul>
+      </div>
+
+      <div class="card-action aa-card-action--stack">
+        <a class="btn aa-btn-primary" href="https://wa.me/4915112345678">WhatsApp</a>
+        <a class="btn-flat aa-btn-flat" href="tel:+4915112345678">Anrufen</a>
       </div>
     </div>
   </div>
 
-  <!-- 3 -->
-  <div class="col s12 m6 l3">
-    <div class="card aa-card">
-      <div class="card-content">
-        <span class="card-title aa-card__title">
-          <i class="material-icons left">event</i>Erstgespräch
-        </span>
+</div>
 
-        <p class="grey-text text-darken-2" style="margin-top:0">
-          Sie wissen bereits, welchen Betreuer Sie möchten? In einem kurzen Erstgespräch können Sie gemeinsam Ziel, Vorgehen, Umfang und nächste Schritte besprechen.
-        </p>
-
-        <ul class="aa-list">
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Dauer:</strong> 10–15 Minuten</span>
-          </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Format:</strong> Remote (Video/Audio)</span>
-          </li>
-          <li>
-            <i class="material-icons">check</i>
-            <span class="aa-list__text"><strong>Ergebnis:</strong> Klarer Plan + Empfehlung</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="card-action">
-        <a class="btn aa-btn-primary" href="mailto:hello@example.com?subject=Erstgespr%C3%A4ch%20anfragen">Erstgespräch anfragen</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4 -->
-  <div class="col s12 m6 l3">
+<!-- Hinweis: passenden Betreuer finden -->
+<div class="row" style="margin-top:8px">
+  <div class="col s12">
     <div class="card aa-card">
       <div class="card-content">
         <span class="card-title aa-card__title">
@@ -134,7 +102,6 @@ translationKey: "contact"
       </div>
     </div>
   </div>
-
 </div>
 
 <!-- CTA -->

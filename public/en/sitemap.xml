@@ -2,232 +2,232 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/angebot/workshop/</loc>
+    <loc>http://localhost:1313/site/en/angebot/workshop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/angebot/workshop/"
+                href="http://localhost:1313/site/angebot/workshop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/angebot/workshop/"
+                href="http://localhost:1313/site/en/angebot/workshop/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
+    <loc>http://localhost:1313/site/en/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/ueber-uns/"
+                href="http://localhost:1313/site/ueber-uns/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/about/"
+                href="http://localhost:1313/site/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/angebot/wissenschaftliches-lektorat/</loc>
+    <loc>http://localhost:1313/site/en/angebot/wissenschaftliches-lektorat/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/angebot/wissenschaftliches-lektorat/"
+                href="http://localhost:1313/site/angebot/wissenschaftliches-lektorat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/angebot/wissenschaftliches-lektorat/"
+                href="http://localhost:1313/site/en/angebot/wissenschaftliches-lektorat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/ki-hinweis/</loc>
+    <loc>http://localhost:1313/site/en/ki-hinweis/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/ki-hinweis/"
+                href="http://localhost:1313/site/ki-hinweis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/ki-hinweis/"
+                href="http://localhost:1313/site/en/ki-hinweis/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/betreuer/</loc>
+    <loc>http://localhost:1313/site/en/betreuer/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/betreuer/"
+                href="http://localhost:1313/site/betreuer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/betreuer/"
+                href="http://localhost:1313/site/en/betreuer/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>http://localhost:1313/site/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:1313/site/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="http://localhost:1313/site/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/kontakt/</loc>
+    <loc>http://localhost:1313/site/en/kontakt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/kontakt/"
+                href="http://localhost:1313/site/kontakt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/kontakt/"
+                href="http://localhost:1313/site/en/kontakt/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/forgot-password/</loc>
+    <loc>http://localhost:1313/site/en/forgot-password/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/forgot-password/"
+                href="http://localhost:1313/site/forgot-password/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/forgot-password/"
+                href="http://localhost:1313/site/en/forgot-password/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>http://localhost:1313/site/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="http://localhost:1313/site/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/angebot/statistik-beratung/</loc>
+    <loc>http://localhost:1313/site/en/angebot/statistik-beratung/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/angebot/statistik-beratung/"
+                href="http://localhost:1313/site/angebot/statistik-beratung/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/angebot/statistik-beratung/"
+                href="http://localhost:1313/site/en/angebot/statistik-beratung/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/impressum/</loc>
+    <loc>http://localhost:1313/site/en/impressum/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/impressum/"
+                href="http://localhost:1313/site/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/impressum/"
+                href="http://localhost:1313/site/en/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/login/</loc>
+    <loc>http://localhost:1313/site/en/login/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/login/"
+                href="http://localhost:1313/site/login/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/login/"
+                href="http://localhost:1313/site/en/login/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/prices/</loc>
+    <loc>http://localhost:1313/site/en/prices/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/preise/"
+                href="http://localhost:1313/site/preise/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/prices/"
+                href="http://localhost:1313/site/en/prices/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/datenschutz/</loc>
+    <loc>http://localhost:1313/site/en/datenschutz/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/datenschutz/"
+                href="http://localhost:1313/site/datenschutz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/datenschutz/"
+                href="http://localhost:1313/site/en/datenschutz/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/register/</loc>
+    <loc>http://localhost:1313/site/en/register/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/register/"
+                href="http://localhost:1313/site/register/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/register/"
+                href="http://localhost:1313/site/en/register/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/angebot/</loc>
+    <loc>http://localhost:1313/site/en/angebot/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/angebot/"
+                href="http://localhost:1313/site/angebot/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/angebot/"
+                href="http://localhost:1313/site/en/angebot/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>http://localhost:1313/site/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:1313/site/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="http://localhost:1313/site/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/blog/</loc>
+    <loc>http://localhost:1313/site/en/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/blog/"
+                href="http://localhost:1313/site/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/blog/"
+                href="http://localhost:1313/site/en/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/angebot/videoplattform/</loc>
+    <loc>http://localhost:1313/site/en/angebot/videoplattform/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-DE"
-                href="http://localhost:1313/angebot/videoplattform/"
+                href="http://localhost:1313/site/angebot/videoplattform/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/angebot/videoplattform/"
+                href="http://localhost:1313/site/en/angebot/videoplattform/"
                 />
   </url>
 </urlset>

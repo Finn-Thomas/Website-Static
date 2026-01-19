@@ -1,4 +1,6 @@
-baseURL: https://example.com/
+baseURL: "https://adeptusacademicus.infinityfree.me/site/"
+canonifyURLs: true
+relativeURLs: false
 title: Adeptus Academicus
 languageCode: de-de
 defaultContentLanguage: de

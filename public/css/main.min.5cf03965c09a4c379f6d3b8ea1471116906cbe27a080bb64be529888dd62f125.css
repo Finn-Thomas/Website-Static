@@ -471,14 +471,6 @@ a.btn-large{
     rgba(255,255,255,.80);
 }
 
-/* Tighter padding for image-only panels/strips so top/bottom spacing matches visually */
-.aa-wrap--tight{
-  padding: 12px;
-}
-@media (max-width: 600px){
-  .aa-wrap--tight{ padding: 10px; }
-}
-
 .aa-section__head .aa-h2{
   position: relative;
   display: inline-block;
@@ -1051,3 +1043,5 @@ a.btn-large{
 
 
 
+
+.aa-wrap--tight{padding:12px}@media (max-width:600px){.aa-wrap--tight{padding:10px}}

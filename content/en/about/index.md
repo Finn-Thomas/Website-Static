@@ -28,7 +28,7 @@ aliases:
         Adeptus Academicus follows an all-in-one approach designed to make academic support as efficient and transparent as possible. Our platform brings communication and organization together in one central workspace: direct chat between clients and tutors, structured version control, a shared calendar, and clear to-do lists. This keeps the entire workflow traceable, coordinated, and under control at all times.
       </p>
 
-      <h3 class="aa-h2" style="margin-top:10px">The video platform</h3>
+      <h3 class="aa-h3" style="margin-top:10px">The video platform</h3>
       <p class="aa-lead" style="margin-top:6px">
         Our video platform provides access to high-quality educational videos with practical tips and techniques for academic writing. The videos offer an additional way to learn and master core processes of scholarly work.
       </p>
